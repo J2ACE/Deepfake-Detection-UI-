@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url(bg2.png) no-repeat center center fixed; /* Full-page background */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Section Styling */
+section {
+    height: 900px; /* Set height to 900px */
+    padding: 120px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5); /* Reduce opacity for the background */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Home Section Styling */
+.home-section {
+    color: white;
+    height: 900px; /* Set height to 900px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn-get-started {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-get-started:hover {
+    background-color: #ff4500;
+}
+
+/* User Experience Section */
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.review {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+#section3 p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Us Section */
+#section5 p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .home-section h1 {
+        font-size: 2.5em;
+    }
+
+    .home-section p {
+        font-size: 1.2em;
+    }
+
+    .btn-get-started {
+        font-size: 1em;
+    }
+}
